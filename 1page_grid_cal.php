@@ -1,5 +1,4 @@
 <?php
-
     $days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     $year = 2024;
     $date = new DateTime("$year-01-01");
