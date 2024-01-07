@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20px;
+    min-height: 100vh;
+}
+
+.cal {
+    font-size: xx-large;
+    display: grid;
+    /* grid-auto-flow: column; */
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.year {
+    font-size: 5rem;
+    place-self: center;
+}
+
+.year .caption {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* border: 1px solid blue; */
+    border-bottom: 2px double blueviolet;
+}
+
+.date {
+    border: 1px solid blue;
+    text-align: right;
+}
+
+.months {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-self: center;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.day {
+    border: 1px solid blue;
+
+}
+
+.Sun {
+    color: red;
+}
